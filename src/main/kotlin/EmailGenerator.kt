@@ -32,7 +32,7 @@ class EmailGenerator {
     private fun createOutputDirIfNotExistent() {
         val directory = File(outputDirPath)
         if (!directory.exists()) {
-            print(directory.mkdir())
+            directory.mkdir()
         }
     }
 
